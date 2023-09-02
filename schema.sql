@@ -10,6 +10,13 @@ CREATE TABLE animals (
 );
 ALTER TABLE animals ADD COLUMN species VARCHAR(255);
 
+CREATE TABLE owners (
+   id int NOT NULL IDENTITY(1,1),
+   full_name varchar(255),
+   age int,
+   PRIMARY KEY (id)
+   );
+
 
 
    CREATE TABLE species (
@@ -19,11 +26,7 @@ ALTER TABLE animals ADD COLUMN species VARCHAR(255);
    );
 
 
-      CREATE TABLE species (
-   id int NOT NULL IDENTITY(1,1),
-   name varchar(255),
-   PRIMARY KEY (id)
-   );
+ 
 
 ALTER TABLE animals
 DROP COLUMN species;
