@@ -11,6 +11,20 @@ CREATE TABLE animals (
 ALTER TABLE animals ADD COLUMN species VARCHAR(255);
 
 
+
+   CREATE TABLE species (
+   id int NOT NULL IDENTITY(1,1),
+   name varchar(255),
+   PRIMARY KEY (id)
+   );
+
+
+      CREATE TABLE species (
+   id int NOT NULL IDENTITY(1,1),
+   name varchar(255),
+   PRIMARY KEY (id)
+   );
+
 ALTER TABLE animals
 DROP COLUMN species;
 
